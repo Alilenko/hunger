@@ -111,8 +111,8 @@
               <form action="#" class="form">
                 <div class="form__content">                
                   <div>
-                  <input name="name" placeholder="Name" class="form__input" type="text">
-                  <input name="phone" placeholder="Phone" class="form__input" type="number">
+                  <input name="name" required placeholder="Name" class="form__input" type="text">
+                  <input name="phone" required placeholder="Phone" class="form__input" type="number">
                   <input name="date" placeholder="Date" class="form__input" type="text">
                 </div>
                 <div>
@@ -704,15 +704,16 @@
     <div class="content__subtitle menu__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
     <form action="#" class="contact__forms">
       <div>
-        <input name="name" placeholder="Name" class="form__input contact__form" type="text">
+        <input name="name" required placeholder="Name" class="form__input contact__form" type="text">
         <input name="email" placeholder="E-mail" class="form__input contact__form" type="email">
-        <input name="phone" placeholder="Phone" class="form__input contact__form" type="number">
+        <input name="phone" required placeholder="Phone" class="form__input contact__form" type="number">
       </div>
       <textarea class="form__input form__textarea" name="massage" placeholder="Message" id="textarea" cols="30" rows="10"></textarea>
+      <div class="contact__block">
+        <div class="contact__text"><span><i class="fas fa-map-marker-alt"></i> 5th London Boulevard, U.K.</span><span><i class="fas fa-phone-alt"></i> <a href="tel:+40729131637">+40 729 131 637</a>/ <a href="tel:+40726458782">+40 726 458 782</a>  </span> <span><i class="fas fa-envelope"></i>office@mindblister.com</span></div>
+      <button class="contact__btn">SEND MESSAGE</button>
     </form>
-    <div class="contact__block">
-      <div class="contact__text"><span><i class="fas fa-map-marker-alt"></i> 5th London Boulevard, U.K.</span><span><i class="fas fa-phone-alt"></i> <a href="tel:+40729131637">+40 729 131 637</a>/ <a href="tel:+40726458782">+40 726 458 782</a>  </span> <span><i class="fas fa-envelope"></i>office@mindblister.com</span></div>
-    <div class="contact__btn">SEND MESSAGE</div>
+
   </div>
   </div>
 </div>
@@ -725,13 +726,16 @@
 <div class="arrow__top">
   <div class="arrow__img"><img src="./assets/img/arrow-yellow.svg" alt="decor"></div>
 </div>
-<div class="overlay"></div>
+
+<div class="overlay hide"></div>
 <div class="modal">
   <i class="modal__close" id="close" class="fas fa-times"></i>
   <img class="active__img" id="active-image" src="" alt="">
   <i id="left" class="fas fa-chevron-left modal_left"></i>
   <i id="right" class="fas fa-chevron-right modal_right"></i>
 </div>
+
+<div class="thanks hide"></div>
     <script src="script.js"></script>
   </body>
 </html>
